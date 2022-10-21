@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_thirdparty", "0_thirdparty", "{9BCCB2E6-BBCC-4D0C-B87C-E19DDE76B7E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_demo", "1_demo", "{BE20914A-3A50-4C46-8828-0F95673AD52B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{62699C4C-4186-4388-BD83-BCE1A7A62F6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestConsoleLogger", "demo\Test\TestConsoleLogger\TestConsoleLogger.vcxproj", "{BB5B8CD0-6DD2-406B-BFC5-5426461946D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C} = {39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestDynamicLogger", "demo\Test\TestDynamicLogger\TestDynamicLogger.vcxproj", "{9223A94B-7484-41E2-9E0D-032E72948624}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F} = {EE54BB79-BD21-4ADB-919C-AA015B4EE06F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestGuiLogger", "demo\Test\TestGuiLogger\TestGuiLogger.vcxproj", "{9223A94B-7484-41E2-9E0D-032E72948623}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C} = {39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestGuiLogger", "demo\Test\TestDynamicLogger\TestGuiLogger.vcxproj", "{CC7AD903-4ABF-4939-A4B9-D6A02F5FBEB0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C} = {39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestConsoleLogger", "TestConsoleLogger", "{3FA43D25-98F3-4641-B61B-FA1174838FC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestDynamicLogger", "TestDynamicLogger", "{59B01BFB-1731-4E19-946A-DE33941D29BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestGuiLogger", "TestGuiLogger", "{C03CF597-9823-43DD-8F85-A6E22F01A259}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vclogger_console", "thirdparty\VC-Logger-2.0.3\src\vclogger_console.vcxproj", "{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vclogger_windows", "thirdparty\VC-Logger-2.0.3\src\vclogger_windows.vcxproj", "{EE54BB79-BD21-4ADB-919C-AA015B4EE06F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB5B8CD0-6DD2-406B-BFC5-5426461946D9}.Debug|x64.ActiveCfg = Debug|x64
+		{BB5B8CD0-6DD2-406B-BFC5-5426461946D9}.Debug|x64.Build.0 = Debug|x64
+		{BB5B8CD0-6DD2-406B-BFC5-5426461946D9}.Release|x64.ActiveCfg = Release|x64
+		{BB5B8CD0-6DD2-406B-BFC5-5426461946D9}.Release|x64.Build.0 = Release|x64
+		{9223A94B-7484-41E2-9E0D-032E72948624}.Debug|x64.ActiveCfg = Debug|x64
+		{9223A94B-7484-41E2-9E0D-032E72948624}.Debug|x64.Build.0 = Debug|x64
+		{9223A94B-7484-41E2-9E0D-032E72948624}.Release|x64.ActiveCfg = Release|x64
+		{9223A94B-7484-41E2-9E0D-032E72948624}.Release|x64.Build.0 = Release|x64
+		{9223A94B-7484-41E2-9E0D-032E72948623}.Debug|x64.ActiveCfg = Debug|x64
+		{9223A94B-7484-41E2-9E0D-032E72948623}.Debug|x64.Build.0 = Debug|x64
+		{9223A94B-7484-41E2-9E0D-032E72948623}.Release|x64.ActiveCfg = Release|x64
+		{9223A94B-7484-41E2-9E0D-032E72948623}.Release|x64.Build.0 = Release|x64
+		{CC7AD903-4ABF-4939-A4B9-D6A02F5FBEB0}.Debug|x64.ActiveCfg = Debug|x64
+		{CC7AD903-4ABF-4939-A4B9-D6A02F5FBEB0}.Release|x64.ActiveCfg = Release|x64
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}.Debug|x64.ActiveCfg = Debug|x64
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}.Debug|x64.Build.0 = Debug|x64
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}.Release|x64.ActiveCfg = Release|x64
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C}.Release|x64.Build.0 = Release|x64
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F}.Debug|x64.ActiveCfg = Debug|x64
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F}.Debug|x64.Build.0 = Debug|x64
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F}.Release|x64.ActiveCfg = Release|x64
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62699C4C-4186-4388-BD83-BCE1A7A62F6A} = {BE20914A-3A50-4C46-8828-0F95673AD52B}
+		{BB5B8CD0-6DD2-406B-BFC5-5426461946D9} = {3FA43D25-98F3-4641-B61B-FA1174838FC0}
+		{9223A94B-7484-41E2-9E0D-032E72948624} = {59B01BFB-1731-4E19-946A-DE33941D29BF}
+		{9223A94B-7484-41E2-9E0D-032E72948623} = {C03CF597-9823-43DD-8F85-A6E22F01A259}
+		{CC7AD903-4ABF-4939-A4B9-D6A02F5FBEB0} = {59B01BFB-1731-4E19-946A-DE33941D29BF}
+		{3FA43D25-98F3-4641-B61B-FA1174838FC0} = {62699C4C-4186-4388-BD83-BCE1A7A62F6A}
+		{59B01BFB-1731-4E19-946A-DE33941D29BF} = {62699C4C-4186-4388-BD83-BCE1A7A62F6A}
+		{C03CF597-9823-43DD-8F85-A6E22F01A259} = {62699C4C-4186-4388-BD83-BCE1A7A62F6A}
+		{39FE5F5B-91C7-4BE8-B95F-42E2EE0DCA1C} = {9BCCB2E6-BBCC-4D0C-B87C-E19DDE76B7E8}
+		{EE54BB79-BD21-4ADB-919C-AA015B4EE06F} = {9BCCB2E6-BBCC-4D0C-B87C-E19DDE76B7E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8CEE52-492A-4393-9DD8-1A14948800DE}
+	EndGlobalSection
+EndGlobal
